@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GCash &mdash; Digital Agriculture Philippines</title>
+<meta name="description" content="Digital payments, wallet, bills and cash-in / cash-out services.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Ccircle cx=%2232%22 cy=%2232%22 r=%2230%22 fill=%22%231e6835%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+<defs>
+
+<symbol id="i-chev-down" viewBox="0 0 24 24"><path d="M5 8l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4.5 20c1.4-3.8 4.4-5.8 7.5-5.8s6.1 2 7.5 5.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="13" y="4" width="7" height="7" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="4" y="13" width="7" height="7" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="13" y="13" width="7" height="7" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+<symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.1" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 3.5v2.3M12 18.2v2.3M20.5 12h-2.3M5.8 12H3.5M17.7 6.3l-1.6 1.6M7.9 16.1l-1.6 1.6M17.7 17.7l-1.6-1.6M7.9 7.9L6.3 6.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+<symbol id="i-logout" viewBox="0 0 24 24"><path d="M9 4H6a1.5 1.5 0 0 0-1.5 1.5v13A1.5 1.5 0 0 0 6 20h3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M13 8l4.5 4-4.5 4M9.5 12H20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-sun-small" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="currentColor"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2v2.4M12 19.6V22M22 12h-2.4M4.4 12H2M19 5l-1.7 1.7M6.7 17.3L5 19M19 19l-1.7-1.7M6.7 6.7L5 5"/></g></symbol>
+<symbol id="i-moon-small" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" fill="currentColor"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="13.5" r="1.4" fill="currentColor"/><circle cx="15" cy="13.5" r="1.4" fill="currentColor"/><path d="M12 8V5M9 5h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M2 13.5h2M20 13.5h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+<symbol id="i-send" viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-3-6-7-2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+<symbol id="i-minimize" viewBox="0 0 24 24"><path d="M5 12h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></symbol>
+<symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 21v-7h2.4l.4-3H14V9.2c0-.9.2-1.5 1.5-1.5H17V5.1C16.7 5 15.8 5 14.7 5c-2.3 0-3.9 1.4-3.9 4v2H8.5v3H10.8v7Z" fill="currentColor"/></symbol>
+<symbol id="i-yt" viewBox="0 0 24 24"><rect x="3" y="6.5" width="18" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10.5 9.7v4.6l4.2-2.3Z" fill="currentColor"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.6 12h16.8M12 3.6c2.4 2.3 3.6 5.2 3.6 8.4s-1.2 6.1-3.6 8.4c-2.4-2.3-3.6-5.2-3.6-8.4S9.6 5.9 12 3.6Z" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+
+<symbol id="i-cow-line" viewBox="0 0 64 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 20c-3-4-2-10 3-11 3-4 9-4 11-1 4-2 9 0 9 5 5 0 8 4 6 9 3 2 3 7-1 9H16c-5 0-6-6-2-11Z"/><path d="M20 22l-2 6M32 24v6M44 22l2 6M12 18l-4-3M52 18l4-3"/><circle cx="24" cy="16" r="1.4" fill="currentColor" stroke="none"/><circle cx="38" cy="16" r="1.4" fill="currentColor" stroke="none"/></g></symbol>
+
+<symbol id="i-goat-line" viewBox="0 0 64 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 26c-2-6 2-12 8-12 2-3 6-4 9-2 5-1 9 3 8 8 4 1 5 6 2 9-2 2-5 3-9 3H24c-4 0-7-2-6-6Z"/><path d="M22 12c-1-3 1-6 3-6M40 12c2-3 5-4 6-2M22 30l-2 5M44 30l2 5M32 28v6"/><circle cx="26" cy="20" r="1.3" fill="currentColor" stroke="none"/><circle cx="36" cy="20" r="1.3" fill="currentColor" stroke="none"/></g></symbol>
+
+<symbol id="i-pig-line" viewBox="0 0 64 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="32" cy="24" rx="20" ry="12"/><circle cx="14" cy="20" r="4"/><ellipse cx="13" cy="21" rx="2.2" ry="1.6" fill="currentColor" stroke="none"/><path d="M18 30l-2 5M30 32l-1 5M42 30l2 5M8 16l-3-3M50 12c2-2 5-1 5 2"/><circle cx="20" cy="18" r="1.2" fill="currentColor" stroke="none"/></g></symbol>
+
+<symbol id="i-chicken-line" viewBox="0 0 64 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M38 32c8 0 14-6 14-13 0-6-5-11-12-11-2-3-6-4-8-2-3-1-6 2-5 5-4 1-6 5-4 8-3 2-4 6-1 9 2 2 6 4 9 4Z"/><path d="M12 34l6-4M10 30l7-2M12 26l6 0"/><path d="M40 8l3-3M44 10l4-2"/><circle cx="42" cy="14" r="1.3" fill="currentColor" stroke="none"/><path d="M20 33c-3 2-6 2-8 0"/></g></symbol>
+
+<symbol id="i-duck-line" viewBox="0 0 64 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 32c-4-1-6-6-3-10 0-6 6-10 12-9 3-4 10-4 13 0 6 0 10 5 8 10 3 2 3 7-1 9H20c-3 0-5-0-6 0Z"/><path d="M44 18l6-1-4 5"/><circle cx="34" cy="17" r="1.3" fill="currentColor" stroke="none"/><path d="M16 32l-2 5M34 33l0 5"/></g></symbol>
+
+<symbol id="i-seal" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-width="2"/>
+  <path d="M32 14c1.5 3 2 6 2 9-3 1-5 3-5 6 3-1 6-1 8 1 1-3 3-5 6-5-1 3-1 6 1 8 3-1 6-1 8 1-2 2-3 5-2 8 3 0 5 2 6 5-3 0-6-1-8-3-1 3-3 5-6 5 0-3-1-6-3-8-3 2-6 2-9 1 1-3 1-6-1-8-3 1-6 0-8-2 2-2 5-3 8-2-1-3-1-6 1-8-3-1-6-1-8 1 0-3 2-5 5-6-1-3-1-6 0-9-1 3-1 6 1 8"
+        fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" opacity=".9"/>
+</symbol>
+
+<symbol id="i-sprout" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 34V18"/><path d="M20 20c0-6-5-9-11-9 0 6 4 11 11 9Z"/><path d="M20 16c0-6 5-9 11-9 0 6-4 11-11 9Z"/></g></symbol>
+
+<symbol id="i-wheat" viewBox="0 0 24 40"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 38V6"/><path d="M12 10c-3-2-5-1-6 1 3 1 5 1 6-1ZM12 10c3-2 5-1 6 1-3 1-5 1-6-1ZM12 16c-3-2-5-1-6 1 3 1 5 1 6-1ZM12 16c3-2 5-1 6 1-3 1-5 1-6-1ZM12 22c-3-2-5-1-6 1 3 1 5 1 6-1ZM12 22c3-2 5-1 6 1-3 1-5 1-6-1Z"/><circle cx="12" cy="4" r="2.6" fill="currentColor" stroke="none"/></g></symbol>
+
+<symbol id="i-leaf" viewBox="0 0 32 32"><path d="M6 26C4 14 12 5 26 6c1 14-8 22-20 20Z" fill="currentColor" opacity=".9"/><path d="M8 24C10 16 15 10 24 8" fill="none" stroke="var(--bg,white)" stroke-width="1.4" stroke-linecap="round" opacity=".55"/></symbol>
+
+<symbol id="i-truck" viewBox="0 0 40 28"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="2" y="8" width="18" height="12" rx="1.5"/><path d="M20 12h7l5 5v3h-12Z"/><circle cx="10" cy="22" r="2.6"/><circle cx="27" cy="22" r="2.6"/></g></symbol>
+
+<symbol id="i-fish" viewBox="0 0 40 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M4 12c4-8 22-8 26 0-4 8-22 8-26 0Z"/><path d="M30 12l7-5v10Z"/><circle cx="11" cy="10" r="1.1" fill="currentColor" stroke="none"/></g></symbol>
+
+<symbol id="i-farmer" viewBox="0 0 40 56"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M14 10c-4 1-7 0-7-2" /><ellipse cx="20" cy="9" rx="7" ry="3.2"/><circle cx="20" cy="14" r="5"/><path d="M20 19v14M20 23l-8 4M20 23l8 4M20 33l-6 12M20 33l6 12"/><path d="M12 27c-3 1-5 3-5 6"/></g></symbol>
+
+<symbol id="i-carabao" viewBox="0 0 64 44"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 22c-2-4 0-9 4-10 1-3 4-4 6-2 2-4 8-4 10-1 5-1 9 3 8 8 4 1 6 6 3 9H18c-3 0-5-2-4-4Z"/><path d="M16 10c-2-2-2-5 0-6M40 8c2-2 5-3 7-1"/><path d="M20 24l-2 8M32 26v8M46 24l2 8M12 20l-4-2M54 18l4-1"/><circle cx="26" cy="16" r="1.3" fill="currentColor" stroke="none"/></g></symbol>
+
+<symbol id="i-cow-fill" viewBox="0 0 100 72">
+  <ellipse cx="46" cy="46" rx="34" ry="22" fill="#fbf6ea"/>
+  <path d="M22 30c6-4 16-5 24-2-4 6-16 10-26 8 0-2 1-4 2-6Z" fill="#2b241c"/>
+  <path d="M58 58c8 2 16-1 20-7-8-4-18-2-24 2 1 2 2 4 4 5Z" fill="#2b241c"/>
+  <ellipse cx="78" cy="34" rx="17" ry="15" fill="#fbf6ea"/>
+  <path d="M64 24c-3-5-1-10 3-9 1 3 1 6 0 9M92 24c3-5 1-10-3-9-1 3-1 6 0 9" fill="none" stroke="#e8d9b0" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="82" cy="40" rx="6" ry="4.5" fill="#d98a7c"/>
+  <circle cx="72" cy="30" r="2.2" fill="#2b241c"/>
+  <circle cx="87" cy="29" r="2.2" fill="#2b241c"/>
+  <g fill="#3a3128"><rect x="18" y="60" width="6" height="12" rx="3"/><rect x="34" y="63" width="6" height="12" rx="3"/><rect x="56" y="63" width="6" height="12" rx="3"/><rect x="70" y="60" width="6" height="12" rx="3"/></g>
+</symbol>
+
+<symbol id="i-carabao-fill" viewBox="0 0 100 72">
+  <ellipse cx="46" cy="46" rx="35" ry="22" fill="#8b9a86"/>
+  <ellipse cx="40" cy="54" rx="20" ry="10" fill="#b7c2ad"/>
+  <ellipse cx="78" cy="33" rx="18" ry="16" fill="#8b9a86"/>
+  <path d="M66 22c-10-6-16 2-10 10M90 22c10-6 16 2 10 10" fill="none" stroke="#4a4038" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="82" cy="40" rx="6" ry="4.5" fill="#4a4038"/>
+  <circle cx="72" cy="29" r="2.2" fill="#2b241c"/>
+  <circle cx="87" cy="28" r="2.2" fill="#2b241c"/>
+  <g fill="#3a3128"><rect x="18" y="60" width="6" height="12" rx="3"/><rect x="34" y="63" width="6" height="12" rx="3"/><rect x="56" y="63" width="6" height="12" rx="3"/><rect x="70" y="60" width="6" height="12" rx="3"/></g>
+</symbol>
+
+<symbol id="i-goat-fill" viewBox="0 0 90 66">
+  <ellipse cx="40" cy="42" rx="28" ry="17" fill="#e9dcc0"/>
+  <ellipse cx="70" cy="30" rx="14" ry="13" fill="#e9dcc0"/>
+  <path d="M62 18c-2-6 1-9 5-8-1 4-2 6-5 8ZM78 18c2-6-1-9-5-8 1 4 2 6 5 8Z" fill="#6b5a3f"/>
+  <path d="M70 40c-2 5-2 9 1 12 3-3 3-7 1-12Z" fill="#6b5a3f"/>
+  <circle cx="65" cy="27" r="1.9" fill="#3a2f22"/>
+  <circle cx="76" cy="26" r="1.9" fill="#3a2f22"/>
+  <g fill="#6b5a3f"><rect x="14" y="52" width="5.5" height="11" rx="2.5"/><rect x="28" y="55" width="5.5" height="11" rx="2.5"/><rect x="50" y="55" width="5.5" height="11" rx="2.5"/><rect x="62" y="52" width="5.5" height="11" rx="2.5"/></g>
+</symbol>
+
+<symbol id="i-sheep-fill" viewBox="0 0 92 66">
+  <g fill="#f7f1e2">
+    <circle cx="26" cy="34" r="15"/><circle cx="42" cy="26" r="16"/><circle cx="58" cy="32" r="15"/><circle cx="38" cy="42" r="16"/>
+  </g>
+  <ellipse cx="74" cy="34" rx="13" ry="12" fill="#4a3d2c"/>
+  <circle cx="70" cy="30" r="1.8" fill="#f7f1e2"/>
+  <circle cx="80" cy="31" r="1.8" fill="#f7f1e2"/>
+  <path d="M62 26c-3-4-2-8 1-8 1 3 1 5 0 8Z" fill="#4a3d2c"/>
+  <g fill="#4a3d2c"><rect x="14" y="52" width="5.5" height="11" rx="2.5"/><rect x="30" y="55" width="5.5" height="11" rx="2.5"/><rect x="50" y="55" width="5.5" height="11" rx="2.5"/><rect x="64" y="52" width="5.5" height="11" rx="2.5"/></g>
+</symbol>
+
+<symbol id="i-chicken-fill" viewBox="0 0 56 56">
+  <ellipse cx="24" cy="34" rx="18" ry="15" fill="#fbf6ea"/>
+  <circle cx="42" cy="20" r="10" fill="#fbf6ea"/>
+  <path d="M40 8c1-3 4-4 5-2-1 2-3 3-5 2ZM45 9c2-2 5-1 5 1-2 1-4 1-5-1ZM49 12c2-1 4 1 3 3-2 0-3-1-3-3Z" fill="#d1483a"/>
+  <path d="M50 21l6-2-3 5Z" fill="#e7a23a"/>
+  <circle cx="45" cy="18" r="1.6" fill="#2b241c"/>
+  <path d="M10 44c-3 2-6 2-8 0" fill="none" stroke="#fbf6ea" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#e7a23a"><rect x="16" y="46" width="4.5" height="9" rx="2"/><rect x="30" y="47" width="4.5" height="9" rx="2"/></g>
+</symbol>
+
+</defs>
+</svg>
+
+<div class="field-bg" aria-hidden="true"><div class="sunray" aria-hidden="true"></div><div class="drift" style="left:6%;animation-duration:18s;animation-delay:0s;--drift-x:30px;--drift-r:20deg"><svg width="46" height="46" aria-hidden="true"><use href="#i-leaf"/></svg></div><div class="drift" style="left:18%;animation-duration:24s;animation-delay:3s;--drift-x:30px;--drift-r:20deg"><svg width="30" height="30" aria-hidden="true"><use href="#i-wheat"/></svg></div><div class="drift" style="left:30%;animation-duration:20s;animation-delay:6s;--drift-x:30px;--drift-r:20deg"><svg width="38" height="38" aria-hidden="true"><use href="#i-leaf"/></svg></div><div class="drift" style="left:46%;animation-duration:22s;animation-delay:1.5s;--drift-x:30px;--drift-r:20deg"><svg width="34" height="34" aria-hidden="true"><use href="#i-sprout"/></svg></div><div class="drift" style="left:62%;animation-duration:26s;animation-delay:4.5s;--drift-x:-30px;--drift-r:20deg"><svg width="30" height="30" aria-hidden="true"><use href="#i-wheat"/></svg></div><div class="drift" style="left:76%;animation-duration:19s;animation-delay:2.5s;--drift-x:-30px;--drift-r:20deg"><svg width="42" height="42" aria-hidden="true"><use href="#i-leaf"/></svg></div><div class="drift" style="left:88%;animation-duration:23s;animation-delay:5.5s;--drift-x:-30px;--drift-r:20deg"><svg width="30" height="30" aria-hidden="true"><use href="#i-sprout"/></svg></div><div class="drift" style="left:96%;animation-duration:21s;animation-delay:0.8s;--drift-x:-30px;--drift-r:20deg"><svg width="30" height="30" aria-hidden="true"><use href="#i-wheat"/></svg></div></div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Digital Agriculture Philippines home">
+    <span class="brand-seal"><img src="dept-agri-logo.png" alt="Department of Agriculture seal"></span>
+    <span class="brand-text">
+      <span class="brand-name">Digital Agriculture Philippines</span>
+      <span class="brand-tag" data-i18n="nav.tagline">Inclusive · Innovative · Sustainable</span>
+    </span>
+  </a>
+  <div class="header-actions">
+    <div class="lang-switch">
+      <button class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
+        <svg width="17" height="17" aria-hidden="true"><use href="#i-globe"/></svg><span class="lang-code">EN</span>
+      </button>
+      <div class="lang-dropdown" role="menu">
+        <div class="lang-scroll"><button type="button" class="lang-chip" data-lang="en">English</button><button type="button" class="lang-chip" data-lang="fil">Filipino</button><button type="button" class="lang-chip" data-lang="ceb">Cebuano</button><button type="button" class="lang-chip" data-lang="ilo">Ilocano</button></div>
+      </div>
+    </div>
+    <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+      <span class="knob"><svg aria-hidden="true"><use href="#i-sun-small"/></svg></span>
+    </button>
+    <div class="user-menu">
+      <button class="user-chip" type="button" aria-haspopup="true" aria-expanded="false">
+        <span class="user-avatar">R</span>
+        <span class="hello"><span data-i18n="nav.hello">Hello,</span> Rommel</span>
+        <span class="chev"><svg aria-hidden="true"><use href="#i-chev-down"/></svg></span>
+      </button>
+      <div class="user-dropdown" role="menu">
+        <div class="dd-head"><strong>Rommel D. Santos</strong><small>Registered farmer &middot; Region III</small></div>
+        <button class="dd-item" role="menuitem" data-action="profile"><svg aria-hidden="true"><use href="#i-user"/></svg><span class="label-text" data-i18n="nav.profile">Profile</span></button>
+        <button class="dd-item" role="menuitem" data-action="dashboard"><svg aria-hidden="true"><use href="#i-grid"/></svg><span class="label-text" data-i18n="nav.dashboard">Dashboard</span></button>
+        <button class="dd-item" role="menuitem" data-action="settings"><svg aria-hidden="true"><use href="#i-settings"/></svg><span class="label-text" data-i18n="nav.settings">Settings</span></button>
+        <div class="dd-sep"></div>
+        <button class="dd-item danger" role="menuitem" data-action="logout"><svg aria-hidden="true"><use href="#i-logout"/></svg><span class="label-text" data-i18n="nav.logout">Logout</span></button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="top-ticker" aria-hidden="true">
+  <div class="tick-track"><span data-i18n="ticker.text">Department of Agriculture — Digital Agriculture Philippines — Inclusive — Innovative — Sustainable</span><span class="tick-dot" aria-hidden="true">&#9670;</span><span data-i18n="ticker.text">Department of Agriculture — Digital Agriculture Philippines — Inclusive — Innovative — Sustainable</span><span class="tick-dot" aria-hidden="true">&#9670;</span><span data-i18n="ticker.text">Department of Agriculture — Digital Agriculture Philippines — Inclusive — Innovative — Sustainable</span><span class="tick-dot" aria-hidden="true">&#9670;</span><span data-i18n="ticker.text">Department of Agriculture — Digital Agriculture Philippines — Inclusive — Innovative — Sustainable</span><span class="tick-dot" aria-hidden="true">&#9670;</span></div>
+</div>
+<main id="main" class="page-content reveal">
+  <nav class="breadcrumb"><a href="index.html" data-i18n="breadcrumb.home">Home</a> <svg width="13" height="13" aria-hidden="true"><use href="#i-arrow-right"/></svg> <span data-i18n="svc.gcash.title">GCash</span></nav>
+  <section class="page-hero">
+    <span class="icon-wrap"><img src="gcash-icon2-clean.png" alt="GCash icon"></span>
+    <div>
+      <h1 data-i18n="svc.gcash.title">GCash</h1>
+      <p data-i18n="svc.gcash.desc">Digital payments, wallet, bills and cash-in / cash-out services.</p>
+    </div>
+  </section>
+  <div class="mini-marquee"><div class="track"><span>Digital Agriculture Philippines</span><span>GCash</span><span>Inclusive</span><span>Innovative</span><span>Sustainable</span><span>Digital Agriculture Philippines</span><span>GCash</span><span>Inclusive</span><span>Innovative</span><span>Sustainable</span></div></div>
+  <section class="page-panels">
+    <div class="panel">
+  <span class="num" data-i18n="svc.gcash.panel0.title">DIGITAL WALLET</span>
+  <h3 data-i18n="svc.gcash.panel0.title">Digital wallet</h3>
+  <p data-i18n="svc.gcash.panel0.text">Send and receive payments instantly without needing a bank branch nearby.</p>
+</div><div class="panel">
+  <span class="num" data-i18n="svc.gcash.panel1.title">BILLS PAYMENT</span>
+  <h3 data-i18n="svc.gcash.panel1.title">Bills payment</h3>
+  <p data-i18n="svc.gcash.panel1.text">Pay utilities, loans and cooperative dues straight from your phone.</p>
+</div><div class="panel">
+  <span class="num" data-i18n="svc.gcash.panel2.title">CASH-IN / CASH-OUT</span>
+  <h3 data-i18n="svc.gcash.panel2.title">Cash-in / cash-out</h3>
+  <p data-i18n="svc.gcash.panel2.text">Find the nearest partner outlet to convert cash to digital balance and back.</p>
+</div>
+  </section>
+  <a class="back-home" href="index.html"><span style="display:inline-flex;transform:scaleX(-1)"><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow-right"/></svg></span> <span data-i18n="page.back">Back to all services</span></a>
+  <div style="height:2.5rem"></div>
+</main>
+<footer class="site-footer">
+  <div class="footer-field" aria-hidden="true">
+    <div class="row"><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-wheat"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-sprout"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-wheat"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-sprout"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-wheat"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-sprout"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-wheat"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-sprout"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-wheat"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-sprout"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-wheat"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-sprout"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-wheat"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-wheat"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-sprout"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-wheat"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-sprout"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-wheat"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-sprout"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-wheat"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-sprout"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-wheat"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-sprout"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-wheat"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-sprout"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><span style="margin:0 18px;color:var(--gold);opacity:.7"><svg aria-hidden="true"><use href="#i-wheat"/></svg></span></div>
+  </div>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <span class="brand-seal" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.25)"><img src="dept-agri-logo.png" alt="Department of Agriculture seal"></span>
+      <p data-i18n="footer.blurb">One platform connecting Filipino farmers, fisherfolk and rural communities to the services that support their livelihood.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><svg width="16" height="16" aria-hidden="true"><use href="#i-fb"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg width="16" height="16" aria-hidden="true"><use href="#i-yt"/></svg></a>
+        <a href="#" aria-label="Website"><svg width="16" height="16" aria-hidden="true"><use href="#i-globe"/></svg></a>
+      </div>
+    </div>
+    <div><h4 data-i18n="footer.col.services">Services</h4><ul><li><a href="livestock.html" data-i18n="svc.livestock.title">Livestock</a></li><li><a href="crops-vegetables.html" data-i18n="svc.crops-vegetables.title">Crops & Vegetables</a></li><li><a href="fisheries.html" data-i18n="svc.fisheries.title">Fisheries</a></li><li><a href="dar.html" data-i18n="svc.dar.title">DAR</a></li></ul></div>
+    <div><h4 data-i18n="footer.col.more">More services</h4><ul><li><a href="landbank.html" data-i18n="svc.landbank.title">LANDBANK</a></li><li><a href="gcash.html" data-i18n="svc.gcash.title">GCash</a></li><li><a href="rural-transport.html" data-i18n="svc.rural-transport.title">Rural Transport</a></li><li><a href="kadiwa-sell.html" data-i18n="svc.kadiwa-sell.title">KADIWA Sell</a></li></ul></div>
+    <div><h4 data-i18n="footer.col.department">Department</h4><ul><li><a href="#" data-i18n="footer.links.privacy">Privacy Policy</a></li><li><a href="#" data-i18n="footer.links.terms">Terms of Use</a></li><li><a href="#" data-i18n="footer.links.help">Help Center</a></li><li><a href="#" data-i18n="footer.links.contact">Contact Us</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="footer.copyright">© 2025 Department of Agriculture · Digital Agriculture Philippines</span>
+    <div class="flinks">
+      <a href="#" data-i18n="footer.links.privacy">Privacy Policy</a>
+      <a href="#" data-i18n="footer.links.terms">Terms of Use</a>
+      <a href="#" data-i18n="footer.links.help">Help Center</a>
+    </div>
+  </div>
+</footer>
+<div class="ai-widget">
+  <div class="ai-panel" role="dialog" aria-label="Digital Agriculture assistant">
+    <div class="ai-head">
+      <span class="av"><svg width="15" height="15" aria-hidden="true"><use href="#i-bot"/></svg></span>
+      <span class="meta"><strong data-i18n="ai.title">Agri Assistant</strong><small data-i18n="ai.status">Online · here to help</small></span>
+      <button class="ai-ctrl" type="button" data-ai="minimize" aria-label="Minimize"><svg width="12" height="12" aria-hidden="true"><use href="#i-minimize"/></svg></button>
+      <button class="ai-ctrl" type="button" data-ai="close" aria-label="Close"><svg width="12" height="12" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="ai-body">
+      <div class="ai-msg bot" data-i18n="ai.greeting">Magandang araw! I'm your Digital Agriculture assistant. Ask me about any service, like livestock records or KADIWA prices.</div>
+    </div>
+    <div class="ai-quick"><button type="button" data-i18n="svc.livestock.title">Livestock</button><button type="button" data-i18n="svc.crops-vegetables.title">Crops & Vegetables</button><button type="button" data-i18n="svc.fisheries.title">Fisheries</button><button type="button" data-i18n="svc.dar.title">DAR</button></div>
+    <form class="ai-form">
+      <input type="text" placeholder="Ask about a service..." data-i18n-placeholder="ai.placeholder" aria-label="Ask the assistant">
+      <button type="submit" aria-label="Send"><svg width="14" height="14" aria-hidden="true"><use href="#i-send"/></svg></button>
+    </form>
+  </div>
+  <button class="ai-fab" type="button" aria-label="Open assistant" aria-expanded="false">
+    <span class="ping"></span>
+    <span class="badge"></span>
+    <svg width="21" height="21" aria-hidden="true"><use href="#i-bot"/></svg>
+  </button>
+</div>
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
