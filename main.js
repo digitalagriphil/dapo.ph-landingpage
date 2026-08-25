@@ -200,7 +200,9 @@
 
       if(langCode) langCode.textContent = currentLang.toUpperCase();
       document.querySelectorAll('.lang-chip').forEach(function(chip){
-        chip.classList.toggle('active', chip.getAttribute('data-lang') === currentLang);
+        var isActive = chip.getAttribute('data-lang') === currentLang;
+        chip.classList.toggle('active', isActive);
+        chip.setAttribute('aria-current', isActive ? 'true' : 'false');
       });
     }
     window.DAP_applyLanguage = applyLanguage;
