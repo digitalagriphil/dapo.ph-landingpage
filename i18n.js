@@ -325,13 +325,37 @@ window.DAP_I18N = {
     "svc.rural-transport.desc": "Serbisio ti transportasion para kadagiti tattao, ayup ken apit. Iskedul, booking ken suporta iti lohistika.",
     "svc.kadiwa-sell.title": "KADIWA Sell",
     "svc.kadiwa-sell.desc": "Ilakom dagiti apit ken produkto. Access iti tiendaan, gatang ti KADIWA, presio ken kaadda."
+  },
+  "bta": {
+    "nav.tagline": "Inclusive · Innovative · Sustainable"
+  },
+  "hil": {
+    "nav.tagline": "Inclusive · Innovative · Sustainable"
+  },
+  "bik": {
+    "nav.tagline": "Inclusive · Innovative · Sustainable"
+  },
+  "zh": {
+    "nav.tagline": "包容 · 創新 · 永續"
+  },
+  "zh-tw": {
+    "nav.tagline": "共融 · 創新 · 永續"
+  },
+  "ja": {
+    "nav.tagline": "包摂的 · 革新的 · 持続可能"
   }
 };
 window.DAP_I18N_HTML = {
   "hero.title": {
     "fil": "Iisang plataporma para sa <em>buong ani</em> ng mga serbisyo para sa magsasaka.",
     "ceb": "Usa ka plataporma alang sa <em>tibuok ani</em> sa mga serbisyo sa mag-uuma.",
-    "ilo": "Maysa a plataporma para iti <em>intero nga apit</em> dagiti serbisyo para kadagiti mannalon."
+    "ilo": "Maysa a plataporma para iti <em>intero nga apit</em> dagiti serbisyo para kadagiti mannalon.",
+    "bta": "Iisang plataporma para sa <em>kumpletong ani</em> ng mga serbisyo para sa mga magsasaka.",
+    "hil": "Isa ka kaangay nga plataporma para sa <em>bug-os nga ani</em> sang mga serbisyo para sa mga mangunguma.",
+    "bik": "Sarong plataporma para sa <em>gabos na ani</em> nin mga serbisyo para sa mga paragsaka.",
+    "zh": "為農民提供<em>完整收成</em>服務的一站式平台。",
+    "zh-tw": "為農民提供<em>完整收成</em>服務的一站式平台。",
+    "ja": "農家向けサービスの<em>すべてを支える</em>プラットフォーム。"
   }
 };
-window.DAP_LANGS = ["en", "fil", "ceb", "ilo"];
+window.DAP_LANGS = ["en", "fil", "ceb", "ilo", "bta", "hil", "bik", "zh", "zh-tw", "ja"];
